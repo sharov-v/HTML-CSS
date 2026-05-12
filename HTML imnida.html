@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PHILTECH – GMA Branch</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS imnida.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="#hero">
+   <img src="logo.png" alt="PHILTECH Logo" class="nav-logo">
+    <div>
+      <div class="nav-title">PHILTECH</div>
+      <div class="nav-subtitle">GMA Branch</div>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#mission">Mission</a>
+    <a href="#programs">Programs</a>
+    <a href="#hymn">Hymn</a>
+    <a href="#contact">Contact</a>
+  </div>
+<button class="hamburger" id="hamburger">
+  <span></span><span></span><span></span>
+</button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#mission" onclick="closeMobile()">Mission &amp; Vision</a>
+  <a href="#programs" onclick="closeMobile()">Programs</a>
+  <a href="#hymn" onclick="closeMobile()">Hymn</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-noise"></div>
+  <img src="banner.jpg" alt="Description of the image">
+  <div class="hero-content">
+    <h1 class="hero-h1">PHILTECH</h1>
+    <p class="hero-sub">GMA Branch · Cavite</p>
+    <p class="hero-tagline">"Global Success through Academic Excellence"</p>
+    <div class="hero-btns">
+      <a href="#programs" class="btn-primary">Explore Programs</a>
+      <a href="#contact" class="btn-outline">Contact Us</a>
+    </div>
+  </div>
+  <img src="logo.png" alt="PHILTECH Logo" class="hero-emblem">
+  <div class="scroll-down">Scroll</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p class="section-label">Who We Are</p>
+        <h2 class="section-title">Building Tomorrow's Leaders</h2>
+        <div class="divider"></div>
+        <p>In 2010, the non-stock <strong>Philippine Technological Institute of Science, Arts, and Trade Inc. </strong>was established as a nonprofit, nonsectarian private school to lead the way in technical education. Its eleven founders included academics from both public and private universities; school administrators; managers; engineers; and a scientist/inventor and IT industry practitioner.</p>
+        <p>Originally established in Tanay, Rizal, the school opened its doors in June 2011. After TESDA accreditation of additional programs, the Trustees' Board decided to open new branches in General Mariano Alvarez, Cavite, and Sta. Rosa, Laguna, for the 2013–2014 academic year.</p>
+        <p>Today, the <strong>GMA Branch </strong>proudly serves hundreds of students, offering quality senior high school and college programs in a nurturing, values-centered environment.</p>
+        <div class="sunday-badge">✦ Working Student? We Also Offer Sunday Classes!</div>
+      </div>
+      <div class="reveal" style="transition-delay:.2s">
+        <div class="stats-grid">
+          <div class="stat-card"><span class="stat-num">2010</span><span class="stat-lbl">Year Founded</span></div>
+          <div class="stat-card"><span class="stat-num">3+</span><span class="stat-lbl">Branches</span></div>
+          <div class="stat-card"><span class="stat-num">1160+</span><span class="stat-lbl">Students (2013–14)</span></div>
+          <div class="stat-card"><span class="stat-num">11</span><span class="stat-lbl">Founding Members</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION / VISION -->
+<section id="mission">
+  <div class="container">
+    <p class="section-label" style="color:var(--gold)">Our Foundation</p>
+    <h2 class="section-title white">Mission &amp; Vision</h2>
+    <div class="divider gold"></div>
+    <div class="mv-grid reveal">
+      <div class="mv-card">
+        <h3>Mission</h3>
+        <p>Philippine Technological Institute of Sciences, Arts, and Trade, Inc. (PHILTECH) is dedicated to giving quality education to the development of every Filipino. It aims to have students who are value-oriented and physically, academically, socially, and spiritually committed to the achievement of lifelong learning and service to the nation.</p>
+      </div>
+      <div class="mv-card">
+        <h3>Vision</h3>
+        <p>PHILTECH shall emerge as the only technical school in the Philippines that can provide academic excellence and appropriate technology and produce graduates who are globally competitive and shall serve as a pillar in this changing world.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS -->
+<section id="programs">
+  <div class="container">
+    <p class="section-label">What We Offer</p>
+    <h2 class="section-title">Academic Programs</h2>
+    <div class="divider"></div>
+    <div class="tabs">
+      <button class="tab active" onclick="switchTab('shs')">Senior High School</button>
+      <button class="tab active" onclick="switchTab('college')">College</button>
+    </div>
+
+    <!-- SHS -->
+    <div class="tab-content active" id="tab-shs">
+      <div class="accordion reveal">
+
+        <div class="acc-item">
+          <div class="acc-head" onclick="toggleAcc(this)">
+            <span>ASSH – Arts, Social Sciences &amp; Humanities</span>
+            <span class="acc-arrow">▾</span>
+          </div>
+          <div class="acc-body">
+            <p>Targets students interested in human behavior, society, history, communication, and artistic expression, covering subjects like creative writing, journalism, philosophy, political science, sociology, anthropology, and the arts.</p>
+            <p><strong>ASSH Career paths:</strong></p>
+            <ul>
+              <li>Public Administration, Development Studies, International Relations</li>
+              <li>Arts and Design (Visual Arts, Multimedia Arts, Theater Arts)</li>
+              <li>Media and Language (Journalism, Literature, Communication)</li>
+              <li>Psychology (Social Work, Sociology, Anthropology)</li>
+              <li>Journalism, Social Sciences, Education, Government, Research, Arts, Human Resources, and Law</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <div class="acc-head" onclick="toggleAcc(this)">
+            <span>BE – Business &amp; Entrepreneurship</span>
+            <span class="acc-arrow">▾</span>
+          </div>
+          <div class="acc-body">
+            <p>This program is designed for students who are interested in the manufacturing business and want to learn the core principles of the industry. Equips students with essential knowledge and skills needed to succeed in business-related degree programs.</p>
+            <p><strong>BE Career paths:</strong></p>
+            <ul>
+              <li>Accounting and Finance (Accountancy, Management, Economics)</li>
+              <li>Marketing and Entrepreneurship (Business Administration – Marketing Management, Advertising and Public Relations, Digital Marketing)</li>
+              <li>Tourism and Hospitality Management (Hotel and Restaurant Management, Tourism, Business Economics)</li>
+              <li>General Studies (Education, Development Studies, Communication)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <div class="acc-head" onclick="toggleAcc(this)">
+            <span>ICT – ICT Support &amp; Computer Programming / Creative Arts &amp; Design Technologies</span>
+            <span class="acc-arrow">▾</span>
+          </div>
+          <div class="acc-body">
+            <p>Focuses on concepts and skills in information technology. Teaches programming, website design, animation, and illustration skills, which can help in innovative industries.</p>
+            <p><strong>ICT Career paths:</strong></p>
+            <ul>
+              <li>Computer Engineering</li>
+              <li>Game Designer</li>
+              <li>Graphic Arts</li>
+              <li>Data Encoder</li>
+              <li>Programmer</li>
+              <li>System Analyst</li>
+              <li>Web Developer</li>
+              <li>3D Animator</li>
+              <li>Layout Artist</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <div class="acc-head" onclick="toggleAcc(this)">
+            <span>HT – Hospitality &amp; Tourism</span>
+            <span class="acc-arrow">▾</span>
+          </div>
+          <div class="acc-body">
+            <p>Emphasizes home economics, food preparation, and wellness. Instructs students in home management, food, nutrition, and health. Prepares people for jobs in food and nutrition, hospitality, and food service, including positions as chefs, bakers, and baristas.</p>
+            <p><strong>HT Career paths:</strong></p>
+            <ul>
+              <li>Hospitality Management</li>
+              <li>Tourism Management</li>
+              <li>Culinary Arts</li>
+              <li>Events and Marketing Coordinator</li>
+              <li>Business Administration and Management</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      </div>
+    </div>
+
+    <!-- COLLEGE -->
+    <div class="tab-content" id="tab-college">
+      <div class="programs-grid reveal">
+        <div class="program-card wide">
+          <div class="program-info">
+            <div class="program-tag">Sunday Class Available</div>
+            <div class="program-name">College – Sunday Class</div>
+            <div class="program-desc">Designed for working students and professionals who wish to earn a college degree without giving up their careers. Classes are held every Sunday at PHILTECH GMA Branch.</div>
+          </div>
+        </div>
+        <div class="program-card">
+          <div class="program-tag">College Program</div>
+          <div class="program-name">BTVTED - Bachelor Of Technical Teacher Education Major In Food Service Management</div>
+          <div class="program-desc">Major in Food Service Management. Trains future technical teachers to impart vocational and technical skills in educational institutions.</div>
+        </div>
+        <div class="program-card">
+          <div class="program-tag">College Program</div>
+          <div class="program-name">BSOA – Bachelor of Science in Office Administration</div>
+          <div class="program-desc">Develops highly competent professionals equipped with administrative, managerial, and secretarial skills for office environments.</div>
+        </div>
+        <div class="program-card">
+          <div class="program-tag">College Program</div>
+          <div class="program-name">BSCS – Bachelor of Science in Computer Science</div>
+          <div class="program-desc">Provides a strong foundation in computing theory, programming, data structures, algorithms, and software development for modern industries.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HYMN -->
+<section id="hymn">
+  <div class="container">
+    <p class="section-label" style="color:var(--gold)">Our Song</p>
+    <h2 class="section-title white" style="text-align:center">PHILTECH Hymn</h2>
+    <div class="divider gold" style="margin:0 auto 2rem"></div>
+    <div class="hymn-box reveal">
+      <p>
+        PHILTECH our dear Alma Mater<br>
+        Our second home and nurturer<br>
+        Lead us to learn away from aberration<br>
+        Help us achieve our ambitions<br>
+        Let your walls filled with our happy hearts<br>
+        Dreamers and young minds view the light<br>
+        Of tomorrow's vision<br>
+        Sight of green and bright future<br>
+        With the guidance of our God Creator<br>
+        <em>(Repeat All)</em>
+      </p>
+      <p class="hymn-coda">
+        PHILTECH! (PHILTECH), PHILTECH! (PHILTECH)<br>
+        We'll thank you. Thank you forever.<br>
+        Dear PHILTECH (2x) Dear PHILTECH
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- APPLY BANNER -->
+<div class="apply-banner reveal">
+  <h2>Ready to Join PHILTECH GMA?</h2>
+  <p>Take the first step toward your future. Fill out an enrollment form or reach out to our admissions team.</p>
+  <div class="hero-btns" style="margin-top:0;">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVFNVCcarrxfZHQrPrjDz7zSCW78dQDR-h0YGe6px1F94jCQ/viewform" target="_blank" rel="noopener" class="btn-primary">📋 Senior High School →</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScIKSuP3DIed3A-8GZFp59IejmoAdAPhbfTOC6_5Ym3DIpT4w/viewform" target="_blank" rel="noopener" class="btn-primary">📋 College →</a>    <a href="#contact" class="btn-outline">Contact Us</a>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <p class="section-label">Get in Touch</p>
+    <h2 class="section-title">Contact Us!</h2>
+    <div class="divider"></div>
+    <div class="contact-grid">
+      <div class="contact-items reveal">
+        <div class="contact-item">
+          <div class="contact-icon">📝</div>
+          <div>
+            <div class="contact-label">Senior High School</div>
+                  <div class="contact-val"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfVFNVCcarrxfZHQrPrjDz7zSCW78dQDR-h0YGe6px1F94jCQ/viewform" target="_blank" rel="noopener" style="color:var(--crimson);font-weight:600;text-decoration:none;">Click here to fill out →</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📝</div>
+          <div>
+            <div class="contact-label">College</div>
+                   <div class="contact-val"><a href="https://docs.google.com/forms/d/e/1FAIpQLScIKSuP3DIed3A-8GZFp59IejmoAdAPhbfTOC6_5Ym3DIpT4w/viewform" target="_blank" rel="noopener" style="color:var(--crimson);font-weight:600;text-decoration:none;">Click here to fill out →</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📘</div>
+          <div>
+            <div class="contact-label">Facebook</div>
+                   <div class="contact-val"><a href="https://www.facebook.com/philtechgma2013" target="_blank" rel="noopener" style="color:var(--crimson);font-weight:600;text-decoration:none;">Philtech-GMA</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-val">philtech.2013gma@gmail.com</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <div class="contact-label">Telephone</div>
+            <div class="contact-val">(046) 4877521</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📲</div>
+          <div>
+            <div class="contact-label">Phone / Mobile</div>
+            <div class="contact-val">0939-122-1180</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-label">Address</div>
+            <div class="contact-val">2nd Flr. CRDM Building, Congressional Road Gov. Drive, Brgy. G. Maderan, GMA, Cavite</div>
+          </div>
+        </div>
+      </div>
+      <div class="map-box reveal" style="transition-delay:.2s">
+        <div class="map-placeholder" onclick="window.open('https://www.google.com/maps/search/Philtech/@14.2837054,120.9990426,21z?entry=ttu&g_ep=EgoyMDI2MDUxMC4wIKXMDSoASAFQAw%3D%3D','_blank')">
+          <div class="map-pin">📍</div>
+          <div>Click to Open in Google Maps</div>
+          <div style="font-size:.7rem;opacity:.6;letter-spacing:.05em;text-transform:none;">GMA, Cavite</div>
+        </div>
+        <div class="map-address">
+          <strong>PHILTECH GMA Branch</strong><br>
+          2nd Flr. CRDM Building<br>
+          Congressional Road Gov. Drive<br>
+          Brgy. G. Maderan, GMA, Cavite
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-tagline">"Global Success through Academic Excellence"</div>
+  <div class="footer-links">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#mission">Mission &amp; Vision</a>
+    <a href="#programs">Programs</a>
+    <a href="#hymn">Hymn</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="footer-copy">© 2024 Philippine Technological Institute of Sciences, Arts and Trade, Inc. – GMA Branch. All rights reserved.</div>
+</footer>
+
+<script>
+  // Hamburger
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+  function closeMobile() { mobileMenu.classList.remove('open'); }
+
+  // Tabs
+  function switchTab(id) {
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.getElementById('tab-' + id).classList.add('active');
+    event.target.classList.add('active');
+  }
+
+  // Accordion
+  function toggleAcc(head) {
+    const item = head.parentElement;
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.acc-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  }
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.12 });
+  reveals.forEach(r => observer.observe(r));
+</script>
+</body>
+</html>
